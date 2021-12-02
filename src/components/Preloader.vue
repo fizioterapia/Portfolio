@@ -51,13 +51,13 @@ export default {};
       margin: 0 0em;
       border-radius: 100%;
 
-      animation: preloader 2s infinite cubic-bezier(0.39, 0.58, 0.57, 1);
+      animation: preloader 1.5s infinite cubic-bezier(0.39, 0.58, 0.57, 1);
     }
 
     @for $i from 1 through 4 {
       .dot:nth-child(#{$i}) {
         left: calc(#{($i - 1) * 4}em + 1.5em);
-        animation-delay: #{$i * 0.5}s;
+        animation-delay: #{($i - 1) * (1.5/4)}s;
       }
     }
   }

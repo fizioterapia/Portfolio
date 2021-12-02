@@ -52,7 +52,7 @@ export default {};
     font-weight: 500;
     font-size: 1em;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    letter-spacing: 0.35em;
 
     color: rgba(255, 255, 255, 0.75);
   }
@@ -60,7 +60,7 @@ export default {};
   .slide-information {
     position: absolute;
 
-    top: 95%;
+    top: 90%;
     left: 50%;
 
     background: none;

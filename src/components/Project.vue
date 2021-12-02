@@ -31,6 +31,8 @@ a {
 
   text-decoration: none;
 
+  animation: popUp 0.3s ease-in-out;
+
   .header {
     .project-name {
       display: block;
@@ -54,6 +56,17 @@ a {
     margin: 0 auto;
     padding: 0.5em;
     text-decoration: none;
+  }
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 </style>

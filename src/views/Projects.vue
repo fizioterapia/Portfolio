@@ -26,7 +26,7 @@ export default {
       repositories: [],
     };
   },
-  async mounted() {
+  async created() {
     const response = await fetch(
       "https://api.github.com/users/fizioterapia/repos"
     );
