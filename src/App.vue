@@ -47,7 +47,8 @@ export default {
       return false;
     },
     changeRoute(amount) {
-      if (new Date().getTime() - this.lastScroll > 250) {
+      // Workaround for touchpads
+      if (new Date().getTime() - this.lastScroll > 100) {
         if (this.changing == true) return;
 
         if (typeof this.findRoute() === "number") {
