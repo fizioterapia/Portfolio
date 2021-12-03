@@ -32,6 +32,7 @@ a {
   text-decoration: none;
 
   animation: popUp 0.3s ease-in-out;
+  transition: 0.3s all ease-in-out;
 
   .header {
     .project-name {
@@ -57,6 +58,11 @@ a {
     padding: 0.5em;
     text-decoration: none;
   }
+}
+
+a:hover {
+  transform: scale(1.25);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 @keyframes popUp {
